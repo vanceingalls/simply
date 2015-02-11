@@ -1,0 +1,59 @@
+// bower:scss
+// endbower
+
+@import "fonts.scss";
+@import "header.scss";
+@import "search.scss";
+@import "messages.scss";
+@import "avatar.scss";
+@import "postbox.scss";
+@import "subnav.scss";
+@import "hero.scss";
+@import "post.scss";
+@import "addmedia.scss";
+@import "compose.scss";
+@import "overlay.scss";
+@import "settings.scss";
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-size: 12px;
+}
+body {
+  font-family: OpenSans, Helvetica, Arial, sans-serif;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+ul {
+  margin:0;
+  padding:0;
+}
+li {
+  list-style: none;
+}
+h1,h2,h3,h4,h5 {
+  color: #3f454e;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+h2 {
+  font-size: 2.3em;
+}
+h3 {
+  font-size: 1.4em;
+}
+
+.overlayActive {
+  filter:         blur(10px);
+  -webkit-filter: blur(10px);
+  -moz-filter:    blur(10px);
+}
+
+.posts {
+  width: 1180px;
+  margin: 50px auto;
+}

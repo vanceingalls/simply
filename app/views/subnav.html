@@ -1,0 +1,10 @@
+<ul class="subnav">
+  <li class="navitem {{nav.view}}"
+      ng-class="{active: nav.active}"
+      ng-repeat="nav in subnavitems"
+      ng-click="changeView(nav.view, $event)">{{nav.title}}</li>
+  <li>
+    <!-- cheated here -->
+    <img src="/images/viewoptions.png" class="viewoptions" />
+  </li>
+</ul>

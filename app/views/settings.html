@@ -1,0 +1,44 @@
+<div id="settings">
+  <h2>Settings</h2>
+
+  <section class="account">
+    <h3>Account</h3>
+    <div class="avatar">
+      <img src="{{user.image}}" alt=""/>
+      <button>change</button>
+    </div>
+    <form class="personal-info">
+      <input class="name" type="text" ng-model="user.name" />
+      <input class="email" type="email" ng-model="user.email" />
+      <input class="password" type="password" ng-model="user.password" />
+      <div class="confirm">
+        <input type="password" ng-model="user.confirm" />
+        <button>Save</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="notifications">
+    <h3>Notifications</h3>
+    <div class="switch" ng-repeat="option in notifications">
+      <label>
+        <div class="switchbox" ng-class="{active: option.value}"></div>
+        <input type="checkbox" ng-model="option.value" />
+        <span>{{option.text}}</span>
+      </label>
+    </div>
+  </section>
+
+  <section class="privacy">
+    <h3>Privacy</h3>
+    <div class="radio" ng-repeat="option in privacy">
+      <label>
+        <div class="radiobox" ng-class="{active: option.value}"></div>
+        <input type="checkbox" ng-model="option.value" />
+        <span>{{option.text}}</span>
+      </label>
+    </div>
+  </section>
+
+  <button class="save">Save Changes</button>
+</div>

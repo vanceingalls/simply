@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 200;
+  font-style: normal;
+  src: url('/styles/fonts/proxima/ProximaNova-Light.otf') format('opentype');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: 100;
+  font-style: normal;
+  src: url('/styles/fonts/open-sans/OpenSans-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/styles/fonts/open-sans/OpenSans-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: 300;
+  font-style: normal;
+  src: url('/styles/fonts/open-sans/OpenSans-Semibold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: bold;
+  font-style: normal;
+  src: url('/styles/fonts/open-sans/OpenSans-Bold.ttf') format('truetype');
+}

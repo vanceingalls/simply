@@ -1,0 +1,28 @@
+.subnav {
+  width: 575px;
+  position: relative;
+  .navitem {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    color: #fff;
+    opacity: .5;
+    margin-right: 28px;
+    padding: 0 10px 20px;
+    display: inline-block;
+    &.active {
+      border-bottom: 4px solid #00cc99;
+      opacity: 1;
+    }
+  }
+
+  .viewoptions {
+    display: block;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    cursor: pointer;
+  }
+}

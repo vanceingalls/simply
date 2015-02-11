@@ -1,0 +1,16 @@
+<overlay ng-show="overlayActive">
+  <compose></compose>
+</overlay>
+
+<div ng-class="{overlayActive:overlayActive}">
+  <header></header>
+  <div class="hero">
+    <postbox></postbox>
+    <subnav></subnav>
+  </div>
+  <div class="posts" ng-controller="PostsCtrl" deckgrid>
+    <post ng-show="mode(post)"
+          ng-repeat="post in posts"
+          post="post"></post>
+  </div>
+</div>

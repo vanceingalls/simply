@@ -1,0 +1,17 @@
+<div class="post">
+  <img class="avatar" src="/images/avatars/{{post.avatar}}.png" alt=""/>
+  <div class="content">
+    <div class="name">{{post.name}}</div>
+    <div class="post-text" ng-bind-html="post.post"></div>
+    <div class="video" ng-if="post.video"><img src="/images/posts/{{post.video}}.png" /></div>
+    <div class="picture" ng-if="post.picture"><img src="/images/posts/{{post.picture}}.png" /></div>
+    <div class="meta">
+      <div class="expand">Expand</div>
+      <div class="right">
+        <div class="repost"></div>
+        <div class="like"></div>
+        <div class="age">{{post.age}}m</div>
+      </div>
+    </div>
+  </div>
+</div>

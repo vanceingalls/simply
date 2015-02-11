@@ -1,0 +1,34 @@
+@import 'mixins.scss';
+
+.overlay {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0,0,0,.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  @extend .collapsefix;
+
+  .content {
+    width: 575px;
+    margin: 100px auto 0;
+    position:relative;
+  }
+  .close {
+    font-size: 2em;
+    font-weight: 100;
+    border: 1px solid #70767f;
+    width: 25px;
+    height: 25px;
+    display: block;
+    line-height: 1em;
+    text-align: center;
+    border-radius: 25px;
+    color: #70767f;
+    cursor: pointer;
+    position: absolute;
+    right: -30px;
+    top: -30px;
+  }
+}

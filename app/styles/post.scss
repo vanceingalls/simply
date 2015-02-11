@@ -1,0 +1,105 @@
+@import "mixins.scss";
+
+.post {
+  border: 1px solid #dee1e5;
+  padding:20px;
+  border-radius: 3px;
+  width: 375px;
+  margin-bottom: 26px;
+  @extend .clearfix;
+
+  .avatar, .content {
+    display:block;
+    float:left;
+  }
+
+  .avatar {
+    width: 40px;
+  }
+
+  .content {
+    width: 275px;
+    margin-left: 17px;
+  }
+
+  .name {
+    font-size: 1.3em;
+    color: #3f454d;
+    margin-bottom: 10px;
+    line-height: 1em;
+    cursor: pointer;
+  }
+
+  .post-text {
+    font-size: 1.2em;
+    color: #70767f;
+    line-height: 1.8em;
+    a {
+      color: #bec3cc;
+      text-decoration: none;
+    }
+  }
+
+  .meta {
+    margin-top: 25px;
+    color: #bec3cc;
+
+    .expand {
+      float: left;
+    }
+
+    .right {
+      float: right;
+      .repost, .like, .age {
+        float:left;
+        margin-left: 22px;
+      }
+    }
+  }
+
+  .age {
+    line-height: 1.2em;
+    font-size: 1.1em;
+    font-weight: 100;
+  }
+
+  .expand {
+    position:relative;
+    cursor: pointer;
+  }
+
+  .expand:after {
+    content: '';
+    display:block;
+    width: 1px;
+    height: 1px;
+    border: 4px solid transparent;
+    border-top-color: #bec3cc;
+    position: absolute;
+    left: 48px;
+    top: 7px;
+  }
+
+  .repost, .like {
+    width: 13px;
+    height: 13px;
+    cursor:pointer;
+  }
+
+  .repost {
+    background: url(/images/repost.png) no-repeat;
+  }
+
+  .like {
+    background: url(/images/like.png) no-repeat;
+  }
+
+  .picture, .video {
+    margin-left: -78px;
+    margin-top: 25px;
+
+    img {
+      width: 375px;
+    }
+  }
+}

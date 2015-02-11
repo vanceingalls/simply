@@ -1,0 +1,33 @@
+.add-media {
+  color: #fff;
+  .add-photo, .add-video {
+    font-weight: 100;
+    width: 110px;
+    height: 13px;
+    padding-left: 28px;
+    float: left;
+    margin-right: 30px;
+    font-size: 1.3em;
+    line-height: 1em;
+    cursor: pointer;
+    span {
+      opacity: .5;
+    }
+  }
+  .add-photo {
+    background: url(/images/camera.png) no-repeat;
+  }
+  .add-video {
+    background: url(/images/video.png) no-repeat;
+  }
+
+  &.dark {
+    color: #70767f;
+    .add-photo {
+      background: url(/images/camera-dark.png) no-repeat;
+    }
+    .add-video {
+      background: url(/images/video-dark.png) no-repeat;
+    }
+  }
+}

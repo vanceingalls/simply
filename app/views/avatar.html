@@ -1,0 +1,11 @@
+<div class="avatar">
+  <div class="clickable" ng-click="toggle()">
+    <div class="picture"></div>
+    <div class="down-arrow"></div>
+  </div>
+  <ul class="navdropdown" ng-show="toggleState">
+    <li ng-repeat="nav in navitems">
+      <a class="navitem" href="{{nav.href}}">{{nav.title}}</a>
+    </li>
+  </ul>
+</div>

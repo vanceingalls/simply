@@ -1,0 +1,15 @@
+@import "mixins.scss";
+
+.hero {
+  height: 423px;
+  width:100%;
+  background: url(/images/hero.jpg);
+  @extend .collapsefix;
+
+  .postbox {
+    margin: 124px auto 0;
+  }
+  .subnav {
+    margin: 101px auto 0;
+  }
+}
